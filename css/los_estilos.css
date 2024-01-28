@@ -1,0 +1,218 @@
+/* TEXTOS */
+.txt-c{
+    justify-content: center;
+}
+
+.flex{
+    display: flex;
+}
+
+
+.flex-col-sa{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.flex-sa{
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-col-c{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    
+}
+
+.flex-col-c{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.flex-c{
+    display: flex;
+    justify-content:center ;
+}
+
+
+
+/* HOME ARMALO NEGOCIO */
+.cuadros{
+    height: 32rem !important;
+    border-radius: 15px !important;
+    transition: all ease 0.3s;
+}
+.cuadros:hover{
+    transform: scale(1.05);
+    /* height: 35rem !important; */
+    box-shadow:  2px 2px 10px #00000069;
+}
+
+.grid_cuadro{
+    transition: all ease 0.3s;
+}
+
+
+.grid_cuadro:hover{
+    transform: scale(1.1);
+
+}
+
+.cont-slider{
+    width: 32rem;
+    height: 37.5rem;
+    border: 2px solid white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.cont-child{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.line{ 
+    height: 2px;
+    width: 99%;
+    border-bottom: 1px solid white;
+    margin: 15px 0px;
+}
+
+.flex-child div{
+    margin: 10px 0px;
+    margin-left: 10px;
+}
+
+
+/* FLOTILLA */
+
+.cuadro{
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px #9d9090;
+
+}
+
+
+.camion-cont{
+    border-radius: 0 5% 0 5%;
+    box-shadow:2px 2px 5px rgba(125, 125, 125, 0.786);
+    transition: all ease 0.3s;
+}
+.camion-cont:hover{
+    transform: scale(1.1);
+}
+
+.descri{
+    
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    width: 100%;
+
+    justify-content: center;
+}
+
+.descr-lista{
+    box-sizing: border-box;
+    padding: 30px;
+    font-size: smaller;
+    text-align: justify;
+    width: 980%;
+   
+    height: 100%;
+}
+
+.icon_box{
+    display: flex;
+    flex-direction: column;
+}
+
+.style-simple{
+    align-items: center !important;
+    padding: 20px 0px !important;
+    padding-top: 0px !important;
+    display: flex!important;
+}
+
+.image_wrapper i{
+    font-size: 70px;
+    transition: all ease 0.3s;
+}
+
+
+
+.image_wrapper i:hover{
+    color: rgb(108, 209, 235);
+}
+.title{
+    color: white!important;
+}
+
+.no_border{
+    border: 2px solid white;
+    min-height: 23rem  ;
+    transition:all ease 0.3s;
+}
+
+.no_border:hover{
+    border: 4px solid rgb(255, 255, 255);
+}
+
+.m-1{
+    margin:10;
+}
+.m-2{
+    margin:20;
+}
+.m-3{
+    margin:30;
+}
+.m-4{
+    margin:40;
+}
+.m-5{
+    margin:50;
+}
+
+.p-1{
+ padding: 10px;
+}
+
+.p-2{
+padding: 20px;
+}
+
+.p-3{
+padding: 30px;
+}
+
+.p-4{
+padding: 40px;
+}
+
+.p-5{
+padding: 50px;
+}
+
+.camion{
+    border-radius: 15px;
+    transition: all ease 0.3s;
+}
+
+.camion:hover{
+    transform: scale(1.1);
+}
+
+
+.cir-imgs{
+    border-radius: 15px !important;
+}
