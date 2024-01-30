@@ -3,6 +3,10 @@
     justify-content: center;
 }
 
+.txt-j{
+    text-align: justify;
+}
+
 .flex{
     display: flex;
 }
