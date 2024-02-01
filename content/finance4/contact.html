@@ -17,6 +17,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<!-- Favicons -->
 	<link rel="shortcut icon" href="img/favicon.ico">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.0/dist/sweetalert2.all.min.js"></script>
+
 	<!-- FONTS -->
 	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:100,200,300,400,400italic,500,600,700,700italic,900'>
 	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:100,200,300,400,400italic,500,600,700,700italic,900'>
@@ -26,6 +28,7 @@
 	<link rel='stylesheet' href='css/structure.css'>
 	<link rel='stylesheet' href='css/finance4.css'>
 	<link rel='stylesheet' href='css/custom.css'> </head>
+	
 
 <body class="page style-simple button-custom layout-full-width if-border-hide no-content-padding header-transparent sticky-header sticky-tb-color ab-hide subheader-both-center menu-link-color menuo-right menuo-no-borders logo-no-margin mobile-tb-center mobile-side-slide mobile-mini-mr-lc tablet-sticky mobile-header-mini mobile-sticky">
 	<div id="Wrapper">
@@ -36,7 +39,7 @@
 						<div class="column one">
 							<div class="top_bar_left clearfix">
 								<div class="logo">
-									<a id="logo" href="../finance4/img/att_blanco_full.png" title="BeFinance 4 - Betheme" data-height="60" data-padding="15"><img class="logo-main scale-with-grid" src="../finance4/img/att_blanco_full.png"  data-height="35"><img class="logo-sticky scale-with-grid" src="./img/att_blanco_full.png" data-retina="./img/att_blanco_full.png" data-height="35"><img class="logo-mobile scale-with-grid" src="./img/att_blanco_full.png" data-retina="../finance4/img/att_blanco_full.png" data-height="35"><img class="logo-mobile-sticky scale-with-grid" src="./img/att_blanco_full.png" data-retina="../finance4/img/att_blanco_full.png" data-height="35"></a>
+									<a id="logo" href="../../index.html"  title="BeFinance 4 - Betheme" data-height="60" data-padding="15"><img class="logo-main scale-with-grid" src="../finance4/img/att_blanco_full.png"  data-height="35"><img class="logo-sticky scale-with-grid" src="./img/att_blanco_full.png" data-retina="./img/att_blanco_full.png" data-height="35"><img class="logo-mobile scale-with-grid" src="./img/att_blanco_full.png" data-retina="../finance4/img/att_blanco_full.png" data-height="35"><img class="logo-mobile-sticky scale-with-grid" src="./img/att_blanco_full.png" data-retina="../finance4/img/att_blanco_full.png" data-height="35"></a>
 								</div>
 								<div class="menu_wrapper">
 									<nav id="menu">
@@ -46,7 +49,7 @@
 											<li> <a href="control.html"><span>Control AT&T</span></a> </li>
 											<li> <a href="finder.html"><span>Finder AT&T</span></a> </li>
 											<li> <a href="tracker.html"><span>Tracker AT&T</span></a> </li>
-											<li class="current-menu-item"> <a href="contact.html"><span>Contacto</span></a> </li>
+											<li class="current-menu-item"> <a href="contact.html"><span>Distribuidores</span></a> </li>
 											
 										</ul>
 									</nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i></a> </div>
@@ -74,11 +77,11 @@
 												<hr class="no_line" style="margin:0 auto 10px">
 												<h6 style="color:#7487c3;">AT&T</h6>
 												<hr class="no_line" style="margin:0 auto 30px">
-												<h2 style="color:#FFF;">Si tienes una pregunta <br>
+												<h2 style="color:#FFF;">Unete a nuestro equipo de<br>
 												
-													<span class="themecolor">No dudes en contactarnos</span></h2>
+													<span class="themecolor">distribuidores AT&T</span></h2>
 												<hr class="no_line" style="margin:0 auto 80px">
-												<h4 style="color:#FFF;">Nuestro equipo de atención al cliente revisará detenidamente tu mensaje y se <br> esforzará por proporcionarte la mejor asistencia posible en el menor tiempo posible.</h4> </div>
+												<h4 style="color:#FFF;">Únete a nuestro grupo de colaboradores en el equipo de distribución de <br> productos y servicios de AT&T.</h4> </div>
 										</div>
 										<div class="column mcb-column one column_divider">
 											<hr class="no_line" style="margin:0 auto 40px"> </div>
@@ -100,8 +103,8 @@
 									<div class="mcb-wrap-inner">
 										<div class="column mcb-column one column_column">
 											<div class="column_attr clearfix align_center">
-												<h3>Escribenos por este medio</h3>
-												<p> Nos interesa tu opinion. Por ello no dudes en dejarnos tus dudas y sugerencias por este medio </p>
+												<h3>Comunicate por este medio</h3>
+												<p> Nos comunicaremos con usted lo antes  posible en <br> cuanto veamos su mensaje. </p>
 											</div>
 										</div>
 										<div class="column mcb-column one column_column">
@@ -117,17 +120,9 @@
 														<div class="column one">
 															<input placeholder="Email" type="text" name="subject" id="subject" size="40" aria-invalid="false" /> </div>
 															
+															
 															<div class="column one">
-																<select>
-																	<option disabled selected value="">Selecciona una opción</option>
-																	<option>Nuevas contrataciones</option>
-																	<option>Renovaciones</option>
-																	<option>Soluciones</option>
-																	<option>Otros</option>
-																</select>
-															</div>
-															<div class="column one">
-															<textarea placeholder="Asunto" type="text" name="subject" id="subject" size="40" aria-invalid="false" ></textarea>
+															<textarea id="msg" placeholder="¿Tienes experiencia como asesor empresarial?" id="" cols="30" rows="10" type="text" name="subject" id="subject" size="40" aria-invalid="false" ></textarea>
 															</div>
 
 															
@@ -144,6 +139,8 @@
 									</div>
 								</div>
 							</div>
+
+							
 						</div>
 						<div class="section mcb-section full-width">
 							<div class="section_wrapper mcb-section-inner">
