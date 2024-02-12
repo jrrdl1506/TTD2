@@ -42,6 +42,9 @@
     justify-content:center ;
 }
 
+.hidden{
+    display: none;
+}
 
 
 
@@ -338,4 +341,41 @@ padding: 50px;
     padding: 0;
     margin: 0 5%;
 }
+
+
+.btn-blu{
+    background-color:#40487c !important; 
+    font-weight: 500 !important; 
+    font-size: 15px !important; 
+    transition: all ease 0.3s;
+    /* border: 1px solid rgb(124, 123, 123) !important;  */
+}
+
+.btn-blu:hover{
+    background-color:#141936 !important; 
+    font-weight: 500 !important; 
+    font-size: 15px !important; 
+    /* border: 1px solid white !important;  */
+}
+
+.flecha{
+    font-size: 20px;
+    transition: all ease 0.3s;
+}
+
+.flecha:hover{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+
+.fade {
+    opacity: 1;
+    transition: opacity 1s ease-out;
+  }
+  
+  .fadeOut {
+    opacity: 0;
+  }
 
