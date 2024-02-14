@@ -2,8 +2,8 @@
 datosJson ={
     img:[
         "./content/finance4/img/senho.webp",
-        "./content/finance4/img/adOppo.png",
-        "./content/finance4/img/oppo1.png"
+        "./content/finance4/img/floti.png",
+        "./content/finance4/img/adOppo.png"
 
         
 
@@ -19,6 +19,11 @@ datosJson ={
        "El unico plan empresarial en donde podrás elegir las aplicaciones ideales para el dia de forma ilimitada",
        "Permite administrar tus flotillas de manera remota. Mantiene informadas en tiempo real a tus áreas de mantenimiento, seguridad, operación y logística para la toma de decisiones." ,
         "Ofrece a tu cliente combo con equipos con descuento + Descuento Renta Mensual + 1GB Adicional!"
+    ],
+    links:[
+        "content/finance4/control.html",
+        "content/finance4/flotilla.html",
+        "content/finance4/control.html"
     ]
 }
 
@@ -50,7 +55,7 @@ function cambiaTextos(opc){
 
     switch(opc){
         case '1':{
-           
+           $("slider-1-slide-1-layer-5").attr("href",datosJson.links[0])
             $("#img_slide").attr("src",datosJson.img[0]);
             $("#slider-1-slide-1-layer-4").text("");
             $("#slider-1-slide-1-layer-4").append(datosJson.titulo1[0]);
@@ -58,6 +63,7 @@ function cambiaTextos(opc){
             break;
         }
         case '2':{
+            $("slider-1-slide-1-layer-5").attr("href",datosJson.links[1])
             $("#img_slide").attr("src",datosJson.img[1]);
             $("#slider-1-slide-1-layer-4").text("");
             $("#slider-1-slide-1-layer-4").append(datosJson.titulo1[1]);
@@ -66,6 +72,7 @@ function cambiaTextos(opc){
             break;
         }
         case '3':{
+            $("slider-1-slide-1-layer-5").attr("href",datosJson.links[2])
             $("#img_slide").attr("src",datosJson.img[2]);
             $("#slider-1-slide-1-layer-4").text("");
             $("#slider-1-slide-1-layer-4").append(datosJson.titulo1[2]);
