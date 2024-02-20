@@ -168,19 +168,18 @@ function sacarATT(){
     customDiv.innerHTML = `
       <img src='./content/finance4/img/muj.png' style='width:280px'>
      
-      <p>Procesador de 32 bits <br> Memoria extendida de 64 Mb.<br> Utiliza redes LTE y 3G para una mayor cobertura <br> Cuenta con una función de notificación de accidentes.</p>
+      <p>El único plan empresarial en donde podrás elegir las aplicaciones ideales para el día a día de forma ilimitada</p>
     
-      <h4>Renta mensual</h4>
+      <h4>Planes desde $230.00</h4>
       <p>
-      Plan Plus $340<br>
-      Plan Pro Plus $380</p>
+      
  
 
     `;
 
     // Mostrar SweetAlert2 con el div personalizado
     Swal.fire({
-      title: 'Control Flotilla | AT&T Business',
+      title: 'Armalo negocios | AT&T Business',
       html: customDiv,
       showCloseButton: true,
       showConfirmButton: false,
