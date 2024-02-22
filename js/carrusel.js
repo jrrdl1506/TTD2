@@ -3,7 +3,8 @@ datosJson ={
     img:[
         "./content/finance4/img/senho.webp",
         "./content/finance4/img/floti.png",
-        "./content/finance4/img/attinfo.png"
+        "./content/finance4/img/attinfo.png",
+        "./content/finance4/img/muj.png"
 
         
 
@@ -11,19 +12,22 @@ datosJson ={
     titulo1:[
         "Controla tu negocio <br> con AT&T <br> Ármalo negocios",
         "Lleva tu flota al éxito<br> AT&T Control Flotilla",
-        "Combo OPPO en <br> AT&T  Ármalo Negocios"
+        "Combo OPPO en <br> AT&T  Ármalo Negocios",
+        "Forma parte de nuestro equipo <br> AT&T "
 
     ],
    
     info:[
        "El unico plan empresarial en donde podrás elegir las aplicaciones ideales para el dia de forma ilimitada",
        "Permite administrar tus flotillas de manera remota. Mantiene informadas en tiempo real a tus áreas de mantenimiento, seguridad, operación y logística para la toma de decisiones." ,
-        "Ofrece a tu cliente combo con equipos con descuento + Descuento Renta Mensual + 1GB Adicional! "
+        "Ofrece a tu cliente combo con equipos con descuento + Descuento Renta Mensual + 1GB Adicional! ",
+        " Unete a nuestro grupo de colaboradores en el equipo de distribución de productos y servicios de AT&T"
     ],
     links:[
         "content/finance4/control.html",
         "content/finance4/flotilla.html",
         "content/finance4/control.html"
+        
     ]
 }
 
@@ -51,7 +55,7 @@ function selectaSlider(img) {
 
 
 function cambiaTextos(opc){
-
+    // $("#slider-1-slid}e-1-layer-5").show();
     restableceSize();
     switch(opc){
         case '1':{
@@ -87,7 +91,16 @@ function cambiaTextos(opc){
             $("#slider-1-slide-1-layer-5").on('click',sacarSwal);
             break;
         }
-        case 4:{
+        case '4':{
+            $("#img_slide").attr("src",datosJson.img[3]);
+            $("#img_slide").css({
+                "width": "60%",
+                "height": "80%"
+              });
+            $("#slider-1-slide-1-layer-4").text("");
+            $("#slider-1-slide-1-layer-4").append(datosJson.titulo1[3]);
+            $("#slider-1-slide-1-layer-6").text(datosJson.info[3]);
+            $("#slider-1-slide-1-layer-5").on('click',irDistribuidores);
 
             break;
         }
@@ -192,4 +205,9 @@ function restableceSize(){
         "width": "80%",
         "height": "80%"
       });
+}
+
+
+function irDistribuidores(){
+    window.location.href = "content/finance4/contact.html";
 }
